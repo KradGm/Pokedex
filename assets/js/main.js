@@ -1,7 +1,5 @@
 const pokemonOl = document.getElementById('pokemonsList')
 const loadMoreButton = document.getElementById('loadMoreButton')
-const form = document.querySelector('.form')
-const input = document.querySelector('.inputbar')
 
 
 
@@ -49,5 +47,4 @@ loadMoreButton.addEventListener('click', () => {
 
     }
 })
-
 
