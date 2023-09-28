@@ -23,6 +23,37 @@ body{
 .titulo{
     padding: 1rem;
 }
+.pagination button{
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    color: white;
+    background-color: #678fee;
+    border: none;
+    border-radius: 1rem;
+}
+.searchbar .inputbar{
+    background-color: white;
+    width: 130px;
+    display: flex;
+    border-radius: 2rem;
+    outline: none;
+    padding: 4px 20px;
+    transition: width 0.4s ease-in-out;
+    background-image: url('/assets/imgs/searchicon.png');
+    background-position: 5px 6.5px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+input[type=search]:focus {
+    width: 100%;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
 
 @media screen and (min-width: 992px) {
     .content {

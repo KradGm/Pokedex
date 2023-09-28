@@ -7,58 +7,58 @@
 }
 
 .normal{
-background-color: #a6a877;
+    background-image: linear-gradient(#a6a877,#d2d3b0);
 } 
 .grass{
-    background-image: linear-gradient(#77c850,#2c7c06 );
+    background-image: linear-gradient(#77c850,#2c7c06);
 } 
 .fire{
     background-image: linear-gradient(#ee7f30,#b95813);
 } 
 .water{
-    background-color: #678fee;
+    background-image: linear-gradient(#002681,#678fee);
 } 
-.eletric{
-    background-color: #f7cf2e;
+.electric{
+    background-image: linear-gradient(#f7cf2e,#ffe062);
 } 
 .ice{
-    background-color: #98d5d7;
+    background-image: linear-gradient(#98d5d7,#579c9e);
 } 
 .ground{
-    background-color:#dfbf69 ;
+    background-image: linear-gradient(#dfbf69,#634c0e);
 } 
 .flying{
-    background-color: #a98ff0;
+    background-image: linear-gradient(#a98ff0,#9675f0);
 } 
 .poison{
-    background-color: #a040a0;
+    background-image: linear-gradient(#a040a0,#53cc2e);
 } 
 .fighting{
-    background-color: #bf3029;
+    background-image: linear-gradient(#bf3029,#bb4b45);
 } 
 .psychic{
-    background-color:#f65687 ;
+    background-image: linear-gradient(#f3789d,#f65687);
 } 
 .dark{
-    background-color:#725847 ;
+    background-image: linear-gradient(#3b2e25,#725847);
 } 
 .rock{
-    background-color: #b8a137;
+    background-image: linear-gradient(#b8a137,#bd9f1a);
 } 
 .bug{
-    background-color: #a8b720;
+    background-image: linear-gradient(#a8b720,#529e0b)
 } 
 .ghost{
-    background-color: #6e5896;
+    background-image: linear-gradient(#6e5896,#1d0d3a);
 } 
 .steel{
-    background-color: #b9b7cf;
+    background-image: linear-gradient(#b9b7cf,#deddec);
 } 
 .dragon{
-    background-color: #6f38f6;
+    background-image: linear-gradient(#6f38f6,#f63868);
 } 
 .fairy{
-    background-color: #f9aec7;
+    background-image: linear-gradient(#f9aec7,#fc8db2);
 } 
 .pokemon {
     display: flex;
@@ -117,13 +117,7 @@ background-color: #a6a877;
     width: 100%;
     padding: 1rem;
 }
-.pagination button{
-    padding: .25rem .5rem;
-    color: white;
-    background-color: #678fee;
-    border: none;
-    border-radius: 1rem;
-}
+
 
 @media screen and (min-width: 380px) {
     .pokemons {
