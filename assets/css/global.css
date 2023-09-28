@@ -5,12 +5,23 @@
 body{
     background-color: #F6F8FC;
 }
-
+.pokedeximg{
+    max-height: 3rem;
+    max-width: 3rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
 .content {
     width: 100vw;
     padding: 1rem;
     background-color: white;
     height: 100vh;
+}
+.titulo{
+    padding: 1rem;
 }
 
 @media screen and (min-width: 992px) {

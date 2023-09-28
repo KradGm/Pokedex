@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Pokedex</title>
     <!---Normalize CSS--->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -23,8 +24,10 @@
 <body>
 
     <section class="content">
+        <div class="header">
+        <img class="pokedeximg" src="assets/imgs/PokedexImg.png" alt="Icone da PokeDex">
         <h1 class="titulo">Pokedex</h1>
-
+    </div>
         <ol id="pokemonsList" class="pokemons">
             <li class="pokemon">
                 <span class="number">#001</span>
@@ -40,6 +43,11 @@
             </li>
 
         </ol>
+        <div class="pagination">
+        <button id="loadMoreButton" type="button">
+            Load More
+        </button>
+    </div>
     </section>
 
 
