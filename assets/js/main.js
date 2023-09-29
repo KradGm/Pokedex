@@ -1,10 +1,6 @@
 const pokemonOl = document.getElementById('pokemonsList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-
-
-
-
 const limit = 10
 let offset = 0
 
@@ -14,7 +10,7 @@ function loadPokemonItens(offset, limit) {
     PokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon) =>
             `
-            <li class="pokemon ${pokemon.type}">
+            <li class="pokemon ${pokemon.type}" onclick="redirect(${pokemon.number})">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
         
@@ -33,6 +29,10 @@ function loadPokemonItens(offset, limit) {
 }
 loadPokemonItens(offset, limit)
 
+function redirect(id) {
+    window.open(`./pokemonInfo.html?id=${id}`)
+}
+
 loadMoreButton.addEventListener('click', () => {
     offset +=limit
     const nextRecordValue = offset+limit
@@ -48,3 +48,4 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
+    
