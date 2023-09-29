@@ -90,7 +90,7 @@
 
 .skill,
 .ability {
-    margin: 0.225rem 0.2rem;
+    margin: 0rem 0rem;
     border-radius: 1rem;
     text-align: center;
     filter: brightness(1.1);
@@ -125,15 +125,17 @@ progress {
 }
 
 progress::-webkit-progress-value {
-    background: #ff1717;
+    background: #22f561;
 }
 ul.menu {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    background-color: #ffffff;
+    justify-content: space-evenly;
+    background-color: #ffffff00;
     padding: 0px 0;
+    border-radius: 4rem;
 }
+
 
 ul.menu li {
     cursor: pointer;
@@ -141,7 +143,7 @@ ul.menu li {
 
 .barra-dinamica {
     height: 3px;
-    background-color: #ff5722; /* Cor da barra */
+    background-color: #0f63ff; /* Cor da barra */
     width: 0; /* A largura inicial é zero */
     transition: width 0.3s; /* Efeito de transição suave */
 }

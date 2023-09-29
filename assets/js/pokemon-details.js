@@ -42,8 +42,9 @@ function pagePokemon(id) {
             <li data-alvo="aba1">About</li>
             <li data-alvo="aba2">Base Stats</li>
             </ul>
+            <div class="barra-dinamica"></div>
             <div id="aba1" class="conteudo mostrando">
-            <h2 class="subtitle">Sobre</h2>
+            <h2 class="subtitle">About</h2>
             <dl class="about">
             <dt class="text">height</dt>
             <dd class="text">${detail.height / 10} m</dd>
@@ -124,7 +125,7 @@ function pagePokemon(id) {
         });
     } else {
         console.log("Sua lista de items é nula")
-    }
+    }   
     })
 }
 pagePokemon(getId())
