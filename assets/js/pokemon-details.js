@@ -96,12 +96,8 @@ function pagePokemon(id) {
             </div>
             </section>
     </main>          
- `
-    })
-}
-pagePokemon(getId())
-
-const menuItems = document.querySelectorAll('ul.menu li');
+ `;
+    const menuItems = document.querySelectorAll('ul.menu li');
     const barraDinamica = document.querySelector('.barra-dinamica');
     const conteudoAba = document.querySelectorAll('.conteudo');
 
@@ -129,3 +125,7 @@ const menuItems = document.querySelectorAll('ul.menu li');
     } else {
         console.log("Sua lista de items é nula")
     }
+    })
+}
+pagePokemon(getId())
+
