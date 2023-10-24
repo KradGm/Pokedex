@@ -23,7 +23,7 @@ function loadPokemonItens(offset, limit) {
                 </div>
             </li>
     `).join('')//Convertida lista de pokemons em uma lista de Li, juntando todos os li
-        
+
         pokemonOl.innerHTML += newHtml
     })
 }
@@ -34,18 +34,17 @@ function redirect(id) {
 }
 
 loadMoreButton.addEventListener('click', () => {
-    offset +=limit
-    const nextRecordValue = offset+limit
-    if(nextRecordValue >= maxRecords){
+    offset += limit
+    const nextRecordValue = offset + limit
+    if (nextRecordValue >= maxRecords) {
         const newLimit = maxRecords - offset
 
         loadPokemonItens(offset, newLimit)
         loadMoreButton.parentElement.removeChild(loadMoreButton)
-    }else{
+    } else {
 
         loadPokemonItens(offset, limit)
 
     }
 })
 
-    

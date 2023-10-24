@@ -98,34 +98,34 @@ function pagePokemon(id) {
             </section>
     </main>          
  `;
-    const menuItems = document.querySelectorAll('ul.menu li');
-    const barraDinamica = document.querySelector('.barra-dinamica');
-    const conteudoAba = document.querySelectorAll('.conteudo');
+        const menuItems = document.querySelectorAll('ul.menu li');
+        const barraDinamica = document.querySelector('.barra-dinamica');
+        const conteudoAba = document.querySelectorAll('.conteudo');
 
-    if (menuItems != null) {
-        menuItems.forEach(item => {
+        if (menuItems != null) {
+            menuItems.forEach(item => {
 
-            item.addEventListener('click', () => {
-                const alvo = item.getAttribute('data-alvo');
+                item.addEventListener('click', () => {
+                    const alvo = item.getAttribute('data-alvo');
 
-                // Oculta todos os conteúdos das abas
-                conteudoAba.forEach(aba => {
-                    aba.classList.remove('mostrando');
+                    // Oculta todos os conteúdos das abas
+                    conteudoAba.forEach(aba => {
+                        aba.classList.remove('mostrando');
+                    });
+
+                    // Mostra o conteúdo da aba selecionada
+                    document.getElementById(alvo).classList.add('mostrando');
+
+                    // Move a barra dinâmica para a aba selecionada
+                    const largura = item.offsetWidth;
+                    const esquerda = item.offsetLeft;
+                    barraDinamica.style.width = `${largura}px`;
+                    barraDinamica.style.transform = `translateX(${esquerda}px)`;
                 });
-
-                // Mostra o conteúdo da aba selecionada
-                document.getElementById(alvo).classList.add('mostrando');
-
-                // Move a barra dinâmica para a aba selecionada
-                const largura = item.offsetWidth;
-                const esquerda = item.offsetLeft;
-                barraDinamica.style.width = `${largura}px`;
-                barraDinamica.style.transform = `translateX(${esquerda}px)`;
             });
-        });
-    } else {
-        console.log("Sua lista de items é nula")
-    }   
+        } else {
+            console.log("Sua lista de items é nula")
+        }
     })
 }
 pagePokemon(getId())

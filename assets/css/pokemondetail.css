@@ -127,6 +127,7 @@ progress {
 progress::-webkit-progress-value {
     background: #22f561;
 }
+
 ul.menu {
     list-style-type: none;
     display: flex;
@@ -143,9 +144,12 @@ ul.menu li {
 
 .barra-dinamica {
     height: 3px;
-    background-color: #0f63ff; /* Cor da barra */
-    width: 0; /* A largura inicial é zero */
-    transition: width 0.3s; /* Efeito de transição suave */
+    background-color: #0f63ff;
+    /* Cor da barra */
+    width: 0;
+    /* A largura inicial é zero */
+    transition: width 0.3s;
+    /* Efeito de transição suave */
 }
 
 /* Estilos para o conteúdo das abas */
@@ -163,18 +167,22 @@ ul.menu li {
         font-size: 2rem;
         margin-left: 1.5rem;
     }
+
     .type {
         margin-left: 1rem;
     }
+
     .number {
         font-size: 1rem;
         margin-right: 1.5rem;
     }
+
     .subtitle,
     .text,
     .ability {
         font-size: 1rem;
     }
+
     .skills {
         padding-bottom: 7.5rem;
     }
@@ -185,17 +193,21 @@ ul.menu li {
         font-size: 2.5rem;
         margin-left: 1.5rem;
     }
+
     .type {
         margin-left: 1rem;
         font-size: 1rem;
     }
+
     .number {
         font-size: 1.5rem;
         margin-right: 1.5rem;
     }
+
     .subtitle {
         font-size: 1.6rem;
     }
+
     .text,
     .ability {
         font-size: 1.4rem;
